@@ -24,7 +24,7 @@ services:
             context: .
             dockerfile: Dockerfile
         volumes:
-            - ./wp-content:/var/www/comunidad/wp-content/:rw
+            - ./wp-content:/var/www/sostenibilidad/wp-content/:rw
         ports:
             - "8001:80"
         restart: always
