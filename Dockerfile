@@ -1,7 +1,7 @@
 FROM php:7.4-fpm-alpine
 
 # WordPress
-ENV WORDPRESS_VERSION 6.2
+ENV WORDPRESS_VERSION 6.4.3
 
 RUN apk update && apk upgrade
 
@@ -117,7 +117,7 @@ COPY config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 RUN set -eux; \
     version=${WORDPRESS_VERSION}; \
-    sha1='6fcc4c21b107a355e3df0798851d41e0d85f0e6d'; \
+    sha1='ee3bc3a73ab3cfa535c46f111eb641b3467fa44e'; \
     \
     curl -o wordpress.tar.gz -fL "https://wordpress.org/wordpress-$version.tar.gz"; \
     echo "$sha1 *wordpress.tar.gz" | sha1sum -c -; \
