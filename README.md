@@ -9,16 +9,6 @@ _WordPress version currently installed:_ **6.4.3**
 
     Corre el contenedor local usando el comando docker-compose --env-file .env.local up
 
-Or
-
-    docker run -d -p 80:80 -v /local/folder:/var/www/wp-content \
-    -e "DB_HOST=db" \
-    -e "DB_NAME=wordpress" \
-    -e "DB_USER=wp" \
-    -e "DB_PASSWORD=secret" \
-    -e "FS_METHOD=direct" \
-    trafex/wordpress
-
 ### WP-CLI
 
 This image includes [wp-cli](https://wp-cli.org/) which can be used like this:
