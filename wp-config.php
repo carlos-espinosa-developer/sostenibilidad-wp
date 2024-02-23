@@ -1,7 +1,8 @@
 <?php
 
-// define( 'DBI_AWS_ACCESS_KEY_ID', '' );
-// define( 'DBI_AWS_SECRET_ACCESS_KEY', '' );
+define('WP_CONTENT_DIR', getenv('WP_CONTENT_DIR'));
+define('DBI_AWS_ACCESS_KEY_ID', getenv('USER_S3_ACCESS_KEY_ID'));
+define('DBI_AWS_SECRET_ACCESS_KEY', getenv('USER_S3_ACCESS_KEY_SECRET'));
 
 $table_prefix  = getenv('TABLE_PREFIX') ?: 'wp_';
 

@@ -33,8 +33,8 @@ services:
             DB_USER: wordpress
             DB_PASSWORD: wordpress
             DB_NAME: wordpress
-            # USER_S3_ACCESS_KEY_ID: ${USER_S3_ACCESS_KEY_ID}
-            # USER_S3_ACCESS_KEY_SECRET: ${USER_S3_ACCESS_KEY_SECRET}
+            USER_S3_ACCESS_KEY_ID: ${USER_S3_ACCESS_KEY_ID}
+            USER_S3_ACCESS_KEY_SECRET: ${USER_S3_ACCESS_KEY_SECRET}
         env_file:
             - .env.${APP_ENV}
 
